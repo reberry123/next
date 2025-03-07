@@ -8,11 +8,11 @@ async function getPerson(id: string) {
 }
 
 export default async function PersonDetail({
-    params: {id},
+    params
 }: {
     params: {id: string};
 }) {
-    const person = await getPerson(id);
+    const person = await getPerson(params.id);
     return <div>
         <div className={styles.container}>
             <img src={person.squareImage}></img>
