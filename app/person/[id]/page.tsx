@@ -2,17 +2,19 @@ import styles from "./page.module.css";
 
 const URL_PERSON = "https://billions-api.nomadcoders.workers.dev/person";
 
+interface IParams {
+    params: {
+        id: string
+    };
+}
+
 async function getPerson(id: string) {
     const response = await fetch(`${URL_PERSON}/${id}`);
     return response.json();
 }
 
-export default async function PersonDetail({
-    params
-}: {
-    params: {id: string};
-}) {
-    const person = await getPerson(params.id);
+export default async function PersonDetail({params: {id}}: IParams) {
+    const person = await getPerson(id);
     return <div>
         <div className={styles.container}>
             <img src={person.squareImage}></img>

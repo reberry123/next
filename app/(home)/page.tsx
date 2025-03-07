@@ -16,7 +16,7 @@ export default async function Home() {
     const billionaries = await getBillionaries();
     return <div className="container">{billionaries.map(person => 
     <li key={person.id}>
-        <Item person={person}/>
+        <Item params={person}/>
     </li>
     )}</div>;
 }
