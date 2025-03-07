@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(65, 63, 74);
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1260px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    margin: 0 auto;
+}

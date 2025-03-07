@@ -1,0 +1,40 @@
+.container {
+    width: 880px;
+    margin: 0 auto;
+    background-color: rgb(78, 75, 90);
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.detail {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.item_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 160px;
+    height: 80px;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}

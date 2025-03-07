@@ -1,0 +1,25 @@
+# Node.js 관련
+node_modules/
+.next/
+out/
+dist/
+*.log
+.npm/
+.npm-debug.log*
+yarn-error.log
+pnpm-lock.yaml
+.DS_Store
+
+# 환경 변수 파일
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# TypeScript (사용하는 경우)
+*.tsbuildinfo
+next-env.d.ts
+
+# VS Code 설정 파일
+.vscode/
